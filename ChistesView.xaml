@@ -6,17 +6,22 @@
              Title="Chistes"
              BackgroundColor="#F2E6EE">
     <AbsoluteLayout>
-        <Label Text=""
-               FontSize="16"
-               VerticalOptions="Center"
-               HorizontalOptions="Center"/>
+        <Label 
+            x:Name="ChisteLabel"
+            Text="Cargando chiste..."
+            FontSize="25"
+            TextColor="#010030"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.9, 0.6"
+            AbsoluteLayout.LayoutFlags="All" />
         
-        <Button Text="Inicio"
-                AbsoluteLayout.LayoutBounds="1,1,AutoSize,AutoSize"
-                AbsoluteLayout.LayoutFlags="PositionProportional"
-                Margin="0,0,20,20"
-                Padding="15"
-                BackgroundColor="#4b1535"
+        <Button Text="Otro chiste"
+                AbsoluteLayout.LayoutBounds="0.5, 1, 1, 50"
+                AbsoluteLayout.LayoutFlags="WidthProportional, PositionProportional"
+                BackgroundColor="#010030"
                 TextColor="White"
                 CornerRadius="10"
                 Clicked="OtroChisteButton"/>
