@@ -3,8 +3,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReyesMProgII.ChistesView"
-             Title="Chistes">
-    <ContentPage.Content>
+             Title="Chistes"
+             BackgroundColor="#F2E6EE">
+    <AbsoluteLayout>
+        <Label Text=""
+               FontSize="16"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
         
-    </ContentPage.Content>
+        <Button Text="Inicio"
+                AbsoluteLayout.LayoutBounds="1,1,AutoSize,AutoSize"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Margin="0,0,20,20"
+                Padding="15"
+                BackgroundColor="#4b1535"
+                TextColor="White"
+                CornerRadius="10"
+                Clicked="OtroChisteButton"/>
+
+    </AbsoluteLayout>
 </ContentPage>

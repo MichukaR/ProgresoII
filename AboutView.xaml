@@ -4,7 +4,61 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReyesMProgII.AboutView"
              Title="About">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Frame 
+                Grid.Row="0" Grid.Column="0" BackgroundColor="#ffccf2" Padding="0" >
+                <Label 
+                    HorizontalTextAlignment="Center"
+                    FontSize="30"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="#010030"
+                    Text="Nombre: 
+                    Michelle Reyes"/>
+            </Frame>
+
+            <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="#ffccf3" Padding="0" >
+                <Label 
+                    HorizontalTextAlignment="Center"
+                    FontSize="30"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="#010030"
+                    Text="Fecha: 
+                    Martes 3 de junio"/>
+            </Frame>
+
+            <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="#ffd1e2" Padding="0" >
+                <Label 
+                    HorizontalTextAlignment="Center"
+                    FontSize="30"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="#010030"
+                    Text="Intereses: 
+                    Me gustan los videojuegos"/>
+            </Frame>
+
+            <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="#ffe5f1" Padding="0" >
+                <Label 
+                    HorizontalTextAlignment="Center"
+                    FontSize="30"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="#010030"
+                    Text="Versión: 
+                    1.0"/>
+            </Frame>
+        </Grid>
+    </ScrollView>
 </ContentPage>

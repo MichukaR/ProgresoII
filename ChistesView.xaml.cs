@@ -12,4 +12,8 @@ public partial class ChistesView : ContentPage
     {
         InitializeComponent();
     }
+    private void OtroChisteButton(object? sender, EventArgs e)
+    {
+        Navigation.PushAsync(new AboutView());
+    }
 }
